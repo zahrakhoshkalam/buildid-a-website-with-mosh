@@ -194,3 +194,17 @@ a {
 ::placeholder {
   color: #cdcbd7;
 }
+.media {
+  display: flex;
+}
+.media-icon {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 1rem;
+}
+.media-title {
+  margin-top: 0;
+}
+.media-body {
+  margin: 0 2rem;
+}
