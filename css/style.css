@@ -9,6 +9,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-border: var(--color-border);
 }
 html {
   font-size: 16px;
@@ -82,6 +83,9 @@ a {
   .btn {
     font-size: 1.5rem;
   }
+  .input {
+    font-size: 1.5rem;
+  }
 }
 
 .badge {
@@ -127,15 +131,15 @@ a {
 .btn {
   border-radius: 40px;
   border: 0;
-  text-transform: uppercase;
+  cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem;
-  cursor: pointer;
-  white-space: nowrap;
-  text-align: center;
   margin: 1rem 0;
   padding: 2rem 3rem;
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -164,4 +168,29 @@ a {
 .btn-block {
   width: 100%;
   display: inline-block;
+}
+.input {
+  border-radius: 30px;
+  border: 1px sold var(--color-border);
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+.input-group {
+  border: 1px solid #cdcbd786;
+  border-radius: 30px;
+  display: flex;
+}
+.input-group.input {
+  border: none;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+.input-group .btn {
+  margin: 4px;
+  /* align-items: end; */
+}
+::placeholder {
+  color: #cdcbd7;
 }
