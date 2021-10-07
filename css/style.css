@@ -15,6 +15,9 @@
 html {
   font-size: 16px;
 }
+img {
+  width: 100%;
+}
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
@@ -246,4 +249,43 @@ p {
 .quote-line {
   position: relative;
   bottom: 10px;
+}
+/* grid */
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid {
+  display: grid;
+}
+/* testimonial */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial-image {
+  width: 100%;
+  position: relative;
+  margin: 0 3rem;
+}
+.testimonial-qoute-image {
+  position: inline-flex;
+  top: 3rem;
+  right: -32px;
+  width: 64px;
+  height: 64px;
+  background: var(--color-accent);
+  border-radius: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial .quote {
+    margin: 5rem 0 0 6rem;
+    font-size: 120%;
+    line-height: 1.5;
+  }
 }
