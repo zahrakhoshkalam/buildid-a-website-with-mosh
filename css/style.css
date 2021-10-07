@@ -161,11 +161,11 @@ p {
 .btn-primary:hover {
   background-color: #df2d00;
 }
-.btn-secondry {
+.btn-secondary {
   background: var(--color-secondry);
   color: #fff;
 }
-.btn-secondry:hover {
+.btn-secondary:hover {
   background: #00b2d1;
 }
 .btn-accent {
@@ -287,5 +287,46 @@ p {
     margin: 5rem 0 0 6rem;
     font-size: 120%;
     line-height: 1.5;
+  }
+}
+/* callout */
+.callout--primary {
+  color: rgb(255, 255, 255);
+  background: var(--color-primary);
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+.callout-signup {
+  transform: translateY(5rem);
+}
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.callout__heading {
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+  font-size: 3rem;
+}
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+  .callout.btn {
+    justify-self: start;
+    margin: 0 2rem;
   }
 }
