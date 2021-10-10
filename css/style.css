@@ -86,9 +86,7 @@ p {
   .list-tick .list-item {
     padding-left: 0;
   }
-  .btn {
-    font-size: 1.5rem;
-  }
+
   .input {
     font-size: 1.5rem;
   }
@@ -156,6 +154,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  outline: 0;
 }
 
 .btn--primary {
@@ -201,7 +200,7 @@ p {
 .input-group.input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -298,6 +297,9 @@ p {
   }
   .hero {
     padding-top: 0;
+  }
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 /* callout */
@@ -452,4 +454,24 @@ p {
 .block {
   --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
+}
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: center;
+  margin: 0 auto;
+}
+.badge--secondary {
+  background-color: var(--color-secondry);
+  color: #fff;
 }
