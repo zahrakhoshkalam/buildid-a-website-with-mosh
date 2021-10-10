@@ -301,6 +301,9 @@ p {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
 /* callout */
 .callout--primary {
@@ -474,4 +477,14 @@ p {
 .badge--secondary {
   background-color: var(--color-secondry);
   color: #fff;
+}
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
 }
